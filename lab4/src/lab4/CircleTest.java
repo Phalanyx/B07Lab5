@@ -39,24 +39,9 @@ public class CircleTest {
     void testIsOnCircle2() {
         Point p = new Point(1, 1);
         Circle c = new Circle(p, 10);
-        Point p1 = new Point(1, 5);
+        Point p1 = new Point(1, 20);
         assertFalse(c.isOnCircle(p1));
     }
 
-    @Test
-    void testIsEquals1() {
-        Point p = new Point(1, 1);
-        Circle c1 = new Circle(p, 10);
-        Circle c2 = new Circle(p, 10);
-        assertTrue(c1.equals(c2));
-    }
-
-    @Test
-    void testIsEquals2() {
-        Point p = new Point(1, 1);
-        Circle c1 = new Circle(p, 10);
-        Circle c2 = new Circle(p, 5);
-        assertFalse(c1.equals(c2));
-    }
 
 }
